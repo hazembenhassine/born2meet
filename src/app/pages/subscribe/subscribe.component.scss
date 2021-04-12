@@ -1,0 +1,48 @@
+@import "src/theme";
+
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  height: 1px; /* Specified height */
+  background: $dark-blue; /* Grey background */
+  outline: none; /* Remove outline */
+  width: 100%;
+  transform: translateY(-6px);
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 10px; /* Set a specific slider handle width */
+  height: 12px; /* Slider handle height */
+  background: $dark-blue; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 10px; /* Set a specific slider handle width */
+  height: 12px; /* Slider handle height */
+  background: $dark-blue; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.left-arrow {
+  display: inline-block;
+  border-right: solid 10px $dark-blue;
+  border-top: solid 6px transparent;
+  border-bottom: solid 6px transparent;
+  background: $primary;
+  height: 0;
+  transform: translateY(6px);
+}
+
+.right-arrow {
+  display: inline-block;
+  border-left: solid 10px $dark-blue;
+  border-top: solid 6px transparent;
+  border-bottom: solid 6px transparent;
+  background: $primary;
+  height: 0;
+  transform: translateY(6px);
+}

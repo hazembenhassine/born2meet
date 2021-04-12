@@ -1,1 +1,451 @@
 /* You can add global styles to this file, and also import other style files */
+@import "theme";
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.test {
+  background: $accent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark-section {
+  background: $primary;
+  color: white;
+}
+
+footer {
+  background: $primary;
+  padding: 40px 0;
+}
+
+.footer-title {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.footer-text {
+  display: block;
+  font-size: 12px;
+  color: white;
+}
+
+.facebook-blue {
+  color: #4267B2;
+}
+
+.instagram-gradient {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.twitter-blue {
+  color: #00acee;
+}
+
+.youtube-red {
+  color: #FF0000;
+}
+
+ul.social-media {
+  display: block;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: inline;
+  }
+}
+
+.footer-large-text {
+  color: $orange1;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.google-play-badge {
+  img {
+    width: 150px;
+  }
+}
+
+.phone-img {
+  width: 140px;
+}
+
+h2.section-title {
+  font-weight: bold;
+  color: $orange1;
+}
+
+p.section-paragraph {
+  color: $gray;
+  font-size: 24px;
+}
+
+.proof-title {
+  font-weight: bold;
+}
+
+.prove-it-box {
+  position: relative;
+  padding-top: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+
+  p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-weight: bold;
+    color: $orange2;
+    text-align: center;
+    font-size: 22px;
+
+  }
+
+}
+
+.killed-text {
+  color: $orange2;
+  font-weight: bold;
+
+  p {
+    margin: 0;
+  }
+
+}
+
+.she-got {
+  display: inline-block;
+  font-size: 32px;
+  transform: rotateZ(-10deg);
+}
+
+.killed {
+  font-size: 48px;
+}
+
+.bottom-arrow {
+  margin: 5px 0;
+  width: 0;
+  height: 0;
+  border-top: 20px solid $orange2;
+  border-right: 12px solid transparent;
+  border-Left: 12px solid transparent;
+}
+
+.premium-btn {
+  background: $accent;
+  border: solid 1px white;
+  border-radius: 4px;
+  padding: 0 20px;
+  height: 40px;
+
+  span.btn-text {
+    background: $primary;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+}
+
+.image-banner {
+  width: 80%;
+  height: 350px;
+  border: solid 1px white;
+  border-radius: 10px;
+  overflow: hidden;
+  background: url("assets/images/meet-bg.png") center no-repeat;
+  background-size: cover;
+  position: relative;
+
+  .inner-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 0 30px;
+
+    p {
+      background: $primary;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 700;
+      font-size: 28px;
+      margin: 0;
+    }
+
+  }
+
+}
+
+.gender-button {
+  background: $blue-bg;
+  border: solid 1px white;
+  border-radius: 4px;
+  height: 40px;
+  margin: 0 10px;
+
+  svg-icon {
+    margin: 0 5px;
+  }
+
+}
+
+.age-circle {
+  height: 350px;
+  max-width: 100%;
+  width: 350px;
+}
+
+.age-circle.fire-circle {
+  background: url("assets/images/fire-circle.png") center no-repeat;
+  background-size: contain;
+  mix-blend-mode: exclusion;
+}
+
+.age-circle.blue-circle {
+  background: url("assets/images/blue-circle.png") center no-repeat;
+  background-size: contain;
+}
+
+.date-selection {
+  text-align: center;
+  font-weight: bold;
+}
+
+.primary-button {
+  background: $blue-bg;
+  border: solid 1px white;
+  border-radius: 16px 16px 0 16px;
+  padding: 0 10px;
+
+  .btn-text {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+}
+
+.nav-col {
+  background-color: rgba(255, 255, 255, 0.3);
+
+  .nav-content {
+    padding: 20px 0;
+  }
+
+}
+
+.nav-logo {
+  height: 100px;
+  text-align: center;
+
+  img {
+    height: 100%;
+    object-fit: contain;
+  }
+
+}
+
+.link-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    padding: 5px 0;
+  }
+
+  li a {
+    color: white;
+    font-weight: bold;
+  }
+
+  li a:hover {
+    color: white;
+    text-decoration: none;
+  }
+
+}
+
+.discover4me {
+  width: 60%;
+}
+
+.bg-header {
+  background-color: $gray;
+}
+
+.header-text span {
+  background: $primary;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.number-circle {
+  height: 40px;
+  width: 40px;
+  background: url("assets/images/fire-circle.png") center no-repeat;
+  background-size: contain;
+  mix-blend-mode: exclusion;
+
+  p {
+    margin: 0;
+    line-height: 35px;
+    text-align: center;
+    mix-blend-mode: normal;
+  }
+
+}
+
+.subscribe-title {
+  color: $blue;
+  font-size: 56px;
+  font-weight: bold;
+}
+
+.login-section {
+  min-height: 80vh;
+  background: url("assets/images/meet-bg.png");
+  background-size: cover;
+}
+
+.login-container {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  padding: 20px 40px;
+  margin: 20px 0;
+}
+
+.login-title {
+  color: $dark-blue;
+  font-weight: bold;
+  text-align: center;
+  font-size: 36px;
+}
+
+.login-form {
+  label {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+  }
+}
+
+.form-control.gender-choice {
+  display: inline-block;
+  width: auto;
+}
+
+mat-select.form-control, input.form-control {
+  border-radius: 10px;
+}
+
+.facebook-button {
+  background-color: #4267B2;
+  color: white;
+  text-transform: uppercase;
+  width: 100%;
+  border: none;
+  font-size: 12px;
+  font-weight: bold;
+  height: 32px;
+}
+
+.google-button {
+  background-color: #DB4437;
+  color: white;
+  text-transform: uppercase;
+  width: 100%;
+  border: none;
+  font-size: 12px;
+  font-weight: bold;
+  height: 32px;
+}
+
+.subscribe-banner {
+  width: 500px;
+  position: absolute;
+  top: 40%;
+  left: 200px;
+}
+
+.subscribe-text {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  width: 60%;
+  padding: 40px;
+  margin-bottom: 15px;
+
+  p {
+    margin: 0;
+    background: $primary;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+}
+
+.ads-box {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+
+  p {
+    margin: 0;
+    font-weight: bold;
+    color: $orange2;
+    text-align: center;
+    font-size: 22px;
+
+  }
+
+}
+
+.primary-title {
+  font-weight: bold;
+  background: $primary;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+
+.couple-circle {
+  background: url("assets/images/fire-circle.png") center no-repeat;
+  background-size: contain;
+  mix-blend-mode: exclusion;
+  padding: 40px;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+
+  .image-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: white;
+    transform: translate(5px, -7px);
+    mix-blend-mode: unset;
+  }
+
+}
