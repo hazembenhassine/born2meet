@@ -18,6 +18,7 @@ import { BasketComponent } from './pages/premium-content/basket/basket.component
 import { PackComponent } from './pages/premium-content/pack/pack.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { LoadingComponent } from './pages/premium-content/loading/loading.component';
+import { ChatListComponent } from './pages/premium-content/chat-list/chat-list.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { LoadingComponent } from './pages/premium-content/loading/loading.compon
     PremiumContentComponent,
     BasketComponent,
     PackComponent,
-    LoadingComponent
+    LoadingComponent,
+    ChatListComponent
   ],
   imports: [
     BrowserModule,

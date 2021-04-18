@@ -7,6 +7,7 @@ import { PremiumContentComponent } from './pages/premium-content/premium-content
 import { BasketComponent } from './pages/premium-content/basket/basket.component';
 import { PackComponent } from './pages/premium-content/pack/pack.component';
 import { LoadingComponent } from './pages/premium-content/loading/loading.component';
+import { ChatListComponent } from './pages/premium-content/chat-list/chat-list.component';
 
 const routes: Routes = [
   {
@@ -41,6 +42,10 @@ const routes: Routes = [
       {
         path: 'loading',
         component: LoadingComponent
+      },
+      {
+        path: 'chat-list',
+        component: ChatListComponent
       }
     ]
   }
