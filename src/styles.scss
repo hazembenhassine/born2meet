@@ -458,3 +458,404 @@ mat-select.form-control, input.form-control {
   }
 
 }
+
+a.header-link {
+  margin-left: 5px;
+  color: white;
+}
+
+a.header-link:hover {
+  color: white;
+}
+
+.carousel-container {
+  background: $gray;
+  min-height: 70vh;
+
+  .love-basket {
+    width: 100%;
+  }
+
+  .carousel-element {
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+    background-color: $blue;
+    padding: 5px;
+    position: relative;
+
+    & > img {
+      position: absolute;
+      height: 190px;
+      width: 190px;
+      object-fit: cover;
+      border-radius: 50px;
+      top: 5px;
+      left: 0;
+      transition: all .5s ease;
+      z-index: 1;
+    }
+
+    .element-row {
+      height: 100%;
+      display: flex;
+      display: -ms-flexbox;
+      -ms-flex-align: center;
+      align-items: center;
+
+      & > div {
+        width: 50%;
+      }
+
+      .image {
+        text-align: center;
+      }
+
+      .image .detail-image {
+        width: 60px;
+        height: 60px;
+        border-radius: 20px;
+      }
+
+      p.identity {
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+        text-transform: uppercase;
+      }
+
+      p.add-to-basket {
+        font-size: 12px;
+        color: white;
+        margin: 0;
+      }
+
+      small.small-warning {
+        font-size: 8px;
+        color: #F54D27;
+        font-weight: bold;
+      }
+
+      .heart-circle {
+        width: 50px;
+        height: 50px;
+      }
+
+    }
+
+  }
+
+
+
+  .carousel-element:hover {
+    & > img {
+      width: 80px;
+      height: 80px;
+      border-radius: 20px;
+      left: 5px;
+      top: 50%;
+      transform: translateY(-40px);
+      opacity: 0;
+    }
+  }
+
+}
+
+.carousel-nav {
+  background: $primary;
+  border-radius: 20px;
+  height: 350px;
+  display: flex;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  align-items: center;
+
+  .arrow-right {
+    display: block;
+    border-left: solid 30px $blue;
+    border-top: solid 15px transparent;
+    border-bottom: solid 15px transparent;
+  }
+
+  .arrow-left {
+    display: block;
+    border-right: solid 30px $blue;
+    border-top: solid 15px transparent;
+    border-bottom: solid 15px transparent;
+  }
+
+}
+
+.carousel-nav-alt {
+  background-color: #78D2E030;
+  border-radius: 20px;
+  height: 170px;
+  display: flex;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  align-items: center;
+
+  .arrow-right {
+    display: block;
+    border-left: solid 30px #FCB900;
+    border-top: solid 15px transparent;
+    border-bottom: solid 15px transparent;
+  }
+
+  .arrow-left {
+    display: block;
+    border-right: solid 30px #FCB900;
+    border-top: solid 15px transparent;
+    border-bottom: solid 15px transparent;
+  }
+
+}
+
+.flat-btn {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.basket-text {
+  font-size: 38px;
+  text-align: center;
+  margin: 0;
+  color: white;
+}
+
+.advert-text {
+  font-size: 52px;
+  color: $dark-blue;
+  margin: 0;
+
+  .spacing {
+    letter-spacing: 9px;
+  }
+
+}
+
+.custom-container {
+  padding: 0 150px;
+}
+
+.content {
+  border-radius: 20px;
+  background: $primary;
+}
+
+.round-button {
+  background: $blue-bg;
+  border: solid 1px white;
+  border-radius: 24px;
+  height: 48px;
+
+  .btn-text {
+    text-transform: uppercase;
+    color: white;
+    font-size: 16px;
+  }
+}
+
+p.white-text {
+  color: white;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin: 0;
+  text-align: justify;
+  text-align-last: justify;
+}
+
+p.white-text.small {
+  letter-spacing: 0.1px;
+  font-size: 12px;
+}
+
+p.white-text.large {
+  font-size: 26px;
+  letter-spacing: 0;
+}
+
+.image-container {
+  width: 150px;
+  height: 150px;
+  border-radius: 30px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+}
+
+mat-checkbox ::ng-deep .mat-checkbox-inner-container {width: 40px;height: 40px;}
+
+.mat-checkbox-frame {
+  background-color: #fbfbfb !important;
+  border-color: #fbfbfb;
+}
+
+.mat-checkbox-checked.mat-accent .mat-checkbox-background {
+  background-color: #fbfbfb;
+}
+
+.mat-checkbox-checkmark {
+  fill: #73B4D8 !important;
+}
+
+.mat-checkbox-checkmark-path {
+  stroke: #73B4D8 !important;
+}
+
+.alt-carousel {
+  .carousel-element {
+    width: 150px;
+    height: 150px;
+    border: solid 4px $blue;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+  }
+}
+
+.loading-header {
+  min-height: 75vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: $gray;
+}
+
+.loading-text {
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+@keyframes blink {
+  /**
+   * At the start of the animation the dot
+   * has an opacity of .2
+   */
+  0% {
+    opacity: .2;
+    transform: scale(0.5);
+  }
+  /**
+   * At 20% the dot is fully visible and
+   * then fades out slowly
+   */
+  20% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  /**
+   * Until it reaches an opacity of .2 and
+   * the animation can start again
+   */
+  100% {
+    opacity: .2;
+    transform: scale(0.5);
+  }
+}
+
+.saving {
+  font-size: 46px;
+  text-transform: uppercase;
+}
+
+.saving span {
+  /**
+   * Use the blink animation, which is defined above
+   */
+  animation-name: blink;
+  /**
+   * The animation should take 1.4 seconds
+   */
+  animation-duration: 1.4s;
+  /**
+   * It will repeat itself forever
+   */
+  animation-iteration-count: infinite;
+  /**
+   * This makes sure that the starting style (opacity: .2)
+   * of the animation is applied before the animation starts.
+   * Otherwise we would see a short flash or would have
+   * to set the default styling of the dots to the same
+   * as the animation. Same applies for the ending styles.
+   */
+  animation-fill-mode: both;
+}
+
+.saving span:nth-child(2) {
+  /**
+   * Starts the animation of the third dot
+   * with a delay of .2s, otherwise all dots
+   * would animate at the same time
+   */
+  animation-delay: .2s;
+}
+
+.saving span:nth-child(3) {
+  /**
+   * Starts the animation of the third dot
+   * with a delay of .4s, otherwise all dots
+   * would animate at the same time
+   */
+  animation-delay: .4s;
+}
+
+.saving span:nth-child(4) {
+  /**
+   * Starts the animation of the third dot
+   * with a delay of .4s, otherwise all dots
+   * would animate at the same time
+   */
+  animation-delay: .6s;
+}
+
+.saving span:nth-child(5) {
+  /**
+   * Starts the animation of the third dot
+   * with a delay of .4s, otherwise all dots
+   * would animate at the same time
+   */
+  animation-delay: .8s;
+}
+
+.saving span:nth-child(6) {
+  /**
+   * Starts the animation of the third dot
+   * with a delay of .4s, otherwise all dots
+   * would animate at the same time
+   */
+  animation-delay: 1s;
+}
+
+.saving span:nth-child(7) {
+  /**
+   * Starts the animation of the third dot
+   * with a delay of .4s, otherwise all dots
+   * would animate at the same time
+   */
+  animation-delay: 1.2s;
+}
+
+.born2meet-logo {
+  width: 100px;
+}
+
+.bottom-text {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 42px;
+  color: white;
+}

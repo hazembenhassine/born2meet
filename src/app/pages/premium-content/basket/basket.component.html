@@ -1,0 +1,96 @@
+<div class="carousel-container">
+  <div class="container-fluid">
+    <div class="row justify-content-end">
+      <div class="col-auto d-flex align-items-center">
+        <h4 class="proof-title text-white">ÂMES SOEURS EN ATTENTE</h4>
+      </div>
+      <div class="col-1">
+        <div class="number-circle my-2">
+          <p>0</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-1 carousel-nav justify-content-end">
+        <button (click)="owlCar.prev()" class="flat-btn">
+          <span class="arrow-left">
+
+          </span>
+        </button>
+      </div>
+      <div class="col-10 d-flex flex-column justify-content-center">
+        <div>
+          <owl-carousel-o [options]="customOptions" #owlCar>
+            <ng-template *ngFor="let item of [0, 1, 2, 3, 4, 5, 6, 7 ,8, 9]" carouselSlide>
+              <div class="text-center">
+                <h4 class="proof-title text-white">
+                  ADAM
+                </h4>
+              </div>
+              <div class="d-flex justify-content-center">
+                <div class="carousel-element">
+                  <img src="assets/images/adam.jpeg" alt="">
+                  <div class="element-row">
+                    <div class="image">
+                      <div class="d-flex justify-content-center">
+                        <img class="detail-image" src="assets/images/adam.jpeg" alt="">
+                      </div>
+                      <p class="add-to-basket">Ajouter au panier</p>
+                      <small class="small-warning">5 personnes maximum</small>
+                      <div class="d-flex justify-content-center">
+                        <img class="heart-circle" src="assets/SVG/heart-circle.svg" alt="">
+                      </div>
+                    </div>
+                    <div class="text text-center">
+                      <p class="identity">
+                        ADAM
+                      </p>
+                      <p class="identity">
+                        TUNISIE
+                      </p>
+                      <p class="identity">
+                        ATHÉE
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </owl-carousel-o>
+        </div>
+      </div>
+      <div class="col-1 carousel-nav">
+        <button (click)="owlCar.next()" class="flat-btn">
+          <span class="arrow-right">
+
+          </span>
+        </button>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-2">
+        <img src="assets/SVG/love-basket.svg" class="love-basket" alt="">
+      </div>
+      <div class="col-2 d-flex flex-column justify-content-center">
+        <p class="basket-text">
+          REMPLISSER<br>
+          VOTRE PANIER<br>
+          À VOS CHOIX
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container py-3">
+  <div class="row">
+    <div class="col-auto">
+      <p class="advert-text">
+        <span><strong>BORN TO MEET</strong> looks for your soulmate</span><br>
+        <span class="spacing">among 11700 compatibilities</span>
+      </p>
+    </div>
+    <div class="col">
+      <img class="w-100" src="assets/SVG/born2meet.svg" alt="">
+    </div>
+  </div>
+</div>
