@@ -888,7 +888,7 @@ mat-checkbox ::ng-deep .mat-checkbox-inner-container {width: 40px;height: 40px;}
 .relation-detail {
   border-radius: 5px;
   background: $primary;
-  padding: 20px;
+  padding: 20px 50px 20px 20px;
   position: relative;
   height: 480px;
 
@@ -963,7 +963,7 @@ mat-checkbox ::ng-deep .mat-checkbox-inner-container {width: 40px;height: 40px;}
   border-radius: 5px;
   background: $blue;
   margin-bottom: -3rem;
-  padding: 5px;
+  padding: 5px 5px 0;
 
   .experience-title {
     display: inline-block;
@@ -982,4 +982,75 @@ mat-checkbox ::ng-deep .mat-checkbox-inner-container {width: 40px;height: 40px;}
     margin-right: 4px;
   }
 
+}
+
+.react-text {
+  font-size: 9px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 50px;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  margin: 0;
+}
+
+.talk-bubble {
+  display: inline-block;
+  position: relative;
+  height: auto;
+  background-color: lightyellow;
+  margin: 0 5px;
+  width: calc(100% - 10px);
+}
+
+.round{
+  border-radius: 5px 5px 15px 5px;
+  -webkit-border-radius: 5px 5px 15px 5px;
+  -moz-border-radius: 5px 5px 15px 5px;
+}
+
+.tri-right.right-in:after{
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: -20px;
+  top: auto;
+  bottom: 15px;
+  border: 12px solid;
+  border-color: lightyellow transparent transparent lightyellow;
+}
+
+/* talk bubble contents */
+.talk-text{
+  padding: .5em 1em;
+  text-align: left;
+}
+.talk-text p{
+  /* remove webkit p margins */
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+textarea.no-bg {
+  background: none;
+  border: none;
+}
+
+.more-btn {
+  background: $primary;
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.more-btn .bottom-arrow.white-arrow {
+  border-top-color: white;
+  margin: 0;
 }
