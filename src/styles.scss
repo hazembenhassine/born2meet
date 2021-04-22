@@ -1207,3 +1207,44 @@ textarea.no-bg {
   border-top-color: white;
   margin: 0;
 }
+
+.video {
+  border-radius: 10px;
+  height: 290px;
+  background: $primary;
+  padding: 20px;
+
+  iframe {
+    width: 100%;
+  }
+
+  img.video-thumbnail {
+    height: 70px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  img.video-thumbnail~img.video-thumbnail {
+    margin-top: 20px;
+  }
+
+
+}
+
+.accent-btn {
+  background: $accent;
+  border: solid 1px white;
+  border-radius: 16px 16px 0 16px;
+  padding: 0 10px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+
+  .btn-text {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+}
