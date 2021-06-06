@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+
+.bordered-container {
+  background-image: url("~src/assets/images/container-border.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 650px;
+  margin-top: 100px;
+  position: relative;
+  padding-top: 170px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  .top-logo {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 200px;
+  }
+
+}
+
+.wide-container {
+  background-image: url("~src/assets/images/wide-border.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 120px;
+  padding-left: 25px;
+  padding-right: 70px;
+  padding-bottom: 45px;
+
+  p {
+    font-family: 'Arizonia', cursive;
+    text-align: center;
+    margin: 0;
+    font-size: 28px;
+    line-height: 75px;
+    color: #022440;
+  }
+}
+
+.narrow-container {
+  background-image: url("~src/assets/images/narrow-border.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 160px;
+  padding-left: 45px;
+  padding-right: 80px;
+  padding-bottom: 85px;
+
+  p {
+    font-family: 'Arizonia', cursive;
+    text-align: center;
+    margin: 0;
+    font-size: 24px;
+    line-height: 75px;
+    color: #022440;
+  }
+}
+
+label.form-label {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.form-input {
+  height: 28px;
+  border-radius: 14px;
+  border: solid 1px #808B9E;
+  width: 100%;
+  padding: 0 14px;
+}
+
+.form-input:focus {
+  outline: none;
+}
+
+.small-text {
+  font-weight: 600;
+  font-size: 9px;
+  margin: 0;
+}
+
+.gold-btn {
+  background: linear-gradient(-90deg, #BF953F, #FCF6BA);
+  border: none;
+  height: 28px;
+  border-radius: 14px;
+  font-weight: 600;
+  padding: 0 16px;
+}
+
+.text-toaster {
+  position: absolute;
+  bottom: -20px;
+  right: 100px;
+  width: 400px;
+  padding: 5px 40px;
+  border-radius: 5px;
+  background: linear-gradient(-90deg, #BF953F, #FCF6BA);
+  p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+    margin: 0;
+    color: white;
+  }
+}
+
+button.close-btn {
+  margin-right: 100px;
+  border-top-right-radius: 5px;
+  background: linear-gradient(-90deg, #BF953F, #FCF6BA);
+  border: none;
+  padding: 4px 20px;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+}

@@ -84,26 +84,32 @@
             SUR VOTRE RELATION</h4>
         </div>
         <div class="col-auto">
-          <button class="gender-button">
+          <button class="gender-button"
+                  (click)="setCoupleType(1)"
+                  [ngClass]="{'selected': getCoupleType() === 1}">
             <svg-icon [svgStyle]="{'width.px': '30'}" src="assets/SVG/avatar-male.svg"></svg-icon>
             <svg-icon [svgStyle]="{'width.px': '30'}" src="assets/SVG/avatar-female.svg"></svg-icon>
           </button>
-          <button class="gender-button">
+          <button class="gender-button"
+                  (click)="setCoupleType(2)"
+                  [ngClass]="{'selected': getCoupleType() === 2}">
             <svg-icon [svgStyle]="{'width.px': '30'}" src="assets/SVG/avatar-female.svg"></svg-icon>
             <svg-icon [svgStyle]="{'width.px': '30'}" src="assets/SVG/avatar-female.svg"></svg-icon>
           </button>
-          <button class="gender-button">
+          <button class="gender-button"
+                  (click)="setCoupleType(3)"
+                  [ngClass]="{'selected': getCoupleType() === 3}">
             <svg-icon [svgStyle]="{'width.px': '30'}" src="assets/SVG/avatar-male.svg"></svg-icon>
             <svg-icon [svgStyle]="{'width.px': '30'}" src="assets/SVG/avatar-male.svg"></svg-icon>
           </button>
         </div>
       </div>
-      <div class="row">
+      <div class="row" [formGroup]="form">
         <div class="col-6">
           <div class="age-circle fire-circle d-flex justify-content-center align-items-center">
             <div class="date-selection">
               <p>Vous</p>
-              <p>jj/mm/aaaa</p>
+              <input formControlName="date1" type="date">
             </div>
           </div>
         </div>
@@ -111,13 +117,13 @@
           <div class="age-circle blue-circle d-flex justify-content-center align-items-center">
             <div class="date-selection">
               <p>L'autre femme</p>
-              <p>jj/mm/aaaa</p>
+              <input formControlName="date2" type="date">
             </div>
           </div>
         </div>
       </div>
       <div class="text-center">
-        <button routerLink="/premium/loading" class="primary-button">
+        <button (click)="submitDates()" class="primary-button">
           <span class="btn-text">Valider</span>
         </button>
       </div>

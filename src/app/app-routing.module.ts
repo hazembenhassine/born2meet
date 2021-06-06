@@ -8,6 +8,8 @@ import { BasketComponent } from './pages/premium-content/basket/basket.component
 import { PackComponent } from './pages/premium-content/pack/pack.component';
 import { LoadingComponent } from './pages/premium-content/loading/loading.component';
 import { ChatListComponent } from './pages/premium-content/chat-list/chat-list.component';
+import { TruthComponent } from './pages/premium-content/truth/truth.component';
+import { TruthResolver } from './core/resolvers/truth.resolver';
 
 const routes: Routes = [
   {
@@ -46,6 +48,13 @@ const routes: Routes = [
       {
         path: 'chat-list',
         component: ChatListComponent
+      },
+      {
+        path: 'truth',
+        component: TruthComponent,
+        resolve: {
+          compatibility: TruthResolver
+        }
       }
     ]
   }
