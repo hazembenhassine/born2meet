@@ -1,9 +1,9 @@
-<section class="container-fluid bg-header video-background">
+<section class="container-fluid bg-header py-3 video-background">
   <video autoplay="" loop="" muted="" playsinline="" class="page-left__media" data-id="2">
     <source src="assets/video/BTM_V5.mp4" type="video/mp4">
   </video>
   <div class="row">
-    <div class="col-lg-2 nav-col">
+    <div class="col-lg-auto nav-col">
       <div class="nav-content">
         <div class="nav-logo">
           <img src="assets/SVG/born2meet-white.svg" alt="">
@@ -17,7 +17,7 @@
               <a href="#">Home</a>
             </li>
             <li>
-              <a href="#">Découvrer la vérité sur votre relation</a>
+              <a href="#">Découvrez la vérité sur votre relation</a>
             </li>
             <li>
               <a href="#">Premium</a>
@@ -35,10 +35,9 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-8 d-flex flex-column justify-content-center">
+    <div class="col-lg d-flex flex-column justify-content-end">
       <div class="text-center">
-        <img class="discover4me" src="assets/SVG/discover4me.svg" alt="">
-        <div class="pt-5">
+        <div class="pb-5">
           <p class="header-text">
             <span>VOTRE ÂME SOEUR</span><br>
             <span>LA VERITÉ SUR VOTRE RELATION</span>
@@ -46,7 +45,7 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-2 text-white py-3">
+    <div class="col-lg-auto text-white py-3">
       <h4 class="proof-title">PREMIUM</h4>
       <button class="primary-button my-2">
         <span class="btn-text">Se Connecter</span>
@@ -57,12 +56,12 @@
     </div>
   </div>
 </section>
-<section class="container-fluid dark-section py-5">
-  <div class="row">
-    <div class="col-lg-6">
+<section class="container-fluid px-4 py-2">
+  <div class="row dark-section rounded-corners">
+    <div class="col-lg-6 middle-border pt-5 pb-3">
       <div class="row pb-3">
         <div class="col">
-          <h4 class="proof-title">DÉCOUVRER <br> VOTRE ÂME SOEUR</h4>
+          <h4 class="proof-title">DÉCOUVREZ <br> VOTRE ÂME SOEUR</h4>
         </div>
         <div class="col-auto">
           <button class="premium-btn">
@@ -71,44 +70,57 @@
         </div>
       </div>
       <div class="image-banner">
+        <button class="sub-btn primary-button">
+          <span class="btn-text">Inscription</span>
+        </button>
+        <button class="login-btn primary-button">
+          <span class="btn-text">Déjà inscrit</span>
+        </button>
         <div class="inner-text">
           <p>VIVEZ UNE RELATION COMPATIBLE AVEC BORN TO MEET</p>
         </div>
       </div>
     </div>
-    <div class="col-lg-6">
+    <div class="col-lg-6 pt-5 pb-3">
       <div class="row pb-3">
         <div class="col-6">
-          <h4 class="proof-title">DÉCOUVRER
-            LA VÉRITÉ
+          <h4 class="proof-title">DÉCOUVREZ<br>
+            LA VÉRITÉ<br>
             SUR VOTRE RELATION</h4>
         </div>
-        <div class="col-auto">
-          <button class="gender-button"
-                  (click)="setCoupleType(1)"
-                  [ngClass]="{'selected': getCoupleType() === 1}">
-            <svg-icon [svgStyle]="{'width.px': '30'}" src="assets/SVG/avatar-male.svg"></svg-icon>
-            <svg-icon [svgStyle]="{'width.px': '30'}" src="assets/SVG/avatar-female.svg"></svg-icon>
-          </button>
-          <button class="gender-button"
-                  (click)="setCoupleType(2)"
-                  [ngClass]="{'selected': getCoupleType() === 2}">
-            <svg-icon [svgStyle]="{'width.px': '30'}" src="assets/SVG/avatar-female.svg"></svg-icon>
-            <svg-icon [svgStyle]="{'width.px': '30'}" src="assets/SVG/avatar-female.svg"></svg-icon>
-          </button>
-          <button class="gender-button"
-                  (click)="setCoupleType(3)"
-                  [ngClass]="{'selected': getCoupleType() === 3}">
-            <svg-icon [svgStyle]="{'width.px': '30'}" src="assets/SVG/avatar-male.svg"></svg-icon>
-            <svg-icon [svgStyle]="{'width.px': '30'}" src="assets/SVG/avatar-male.svg"></svg-icon>
-          </button>
+        <div class="col-6">
+          <div>
+            <p class="gender-choice-text">CHOISISSEZ LE GENRE DE VOTRE COUPLE</p>
+          </div>
+          <div class="d-flex justify-content-between">
+            <button class="gender-button"
+                    (click)="setCoupleType(1)"
+                    [ngClass]="{'selected': getCoupleType() === 1}">
+              <svg-icon [svgStyle]="{'width.px': '24'}" src="assets/SVG/avatar-female.svg"></svg-icon>
+              <svg-icon [svgStyle]="{'width.px': '24'}" src="assets/SVG/avatar-male.svg"></svg-icon>
+            </button>
+            <button class="gender-button"
+                    (click)="setCoupleType(2)"
+                    [ngClass]="{'selected': getCoupleType() === 2}">
+              <svg-icon [svgStyle]="{'width.px': '24'}" src="assets/SVG/avatar-female.svg"></svg-icon>
+              <svg-icon [svgStyle]="{'width.px': '24'}" src="assets/SVG/avatar-female.svg"></svg-icon>
+            </button>
+            <button class="gender-button"
+                    (click)="setCoupleType(3)"
+                    [ngClass]="{'selected': getCoupleType() === 3}">
+              <svg-icon [svgStyle]="{'width.px': '24'}" src="assets/SVG/avatar-male.svg"></svg-icon>
+              <svg-icon [svgStyle]="{'width.px': '24'}" src="assets/SVG/avatar-male.svg"></svg-icon>
+            </button>
+          </div>
         </div>
       </div>
       <div class="row" [formGroup]="form">
         <div class="col-6">
           <div class="age-circle fire-circle d-flex justify-content-center align-items-center">
             <div class="date-selection">
-              <p>Vous</p>
+              <p *ngIf="form.get('coupleType').value === 1">Homme</p>
+              <p *ngIf="form.get('coupleType').value === 2">Vous</p>
+              <p *ngIf="form.get('coupleType').value === 3">Vous</p>
               <input formControlName="date1" type="date">
             </div>
           </div>
@@ -116,7 +128,9 @@
         <div class="col-6">
           <div class="age-circle blue-circle d-flex justify-content-center align-items-center">
             <div class="date-selection">
-              <p>L'autre femme</p>
+              <p *ngIf="form.get('coupleType').value === 1">Femme</p>
+              <p *ngIf="form.get('coupleType').value === 2">L'autre femme</p>
+              <p *ngIf="form.get('coupleType').value === 3">L'autre homme</p>
               <input formControlName="date2" type="date">
             </div>
           </div>
@@ -130,44 +144,52 @@
     </div>
   </div>
 </section>
-<section class="container py-5">
+<section class="container-fluid py-5">
   <div class="row">
-    <div class="col-lg-5">
+    <div class="col-lg-4">
       <h2 class="section-title">DISCOVER US</h2>
       <p class="section-paragraph">
         LES RELATIONS AMOUREUSES SONT RÉGIES PAR UN ORDRE COSMIQUE UNIVERSEL CYCLIQUE.
         SEULE LA CONSCIENCE DE LA PERSONNE DÉCIDE DANS QUEL ORDRE SE POSITIONNER.
       </p>
     </div>
-    <div class="col-lg-7">
+    <div class="col-lg-8">
       <div class="video">
         <div class="form-row">
-          <div class="col-9">
-            <iframe height="250" src="https://www.youtube.com/embed/uD4izuDMUQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="col">
+            <iframe height="355" src="https://www.youtube.com/embed/uD4izuDMUQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-          <div class="col-3">
-            <img class="video-thumbnail" src="https://img.youtube.com/vi/uD4izuDMUQA/0.jpg" alt="">
-            <img class="video-thumbnail" src="https://img.youtube.com/vi/uD4izuDMUQA/0.jpg" alt="">
-            <img class="video-thumbnail" src="https://img.youtube.com/vi/uD4izuDMUQA/0.jpg" alt="">
+          <div class="col-auto">
+            <div class="thumbnail-container">
+              <img class="video-thumbnail" src="https://img.youtube.com/vi/uD4izuDMUQA/0.jpg" alt="">
+            </div>
+            <div class="thumbnail-container">
+              <img class="video-thumbnail" src="https://img.youtube.com/vi/uD4izuDMUQA/0.jpg" alt="">
+            </div>
+            <div class="thumbnail-container">
+              <img class="video-thumbnail" src="https://img.youtube.com/vi/uD4izuDMUQA/0.jpg" alt="">
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<section class="container-fluid py-5">
-  <div class="container">
-    <h2 class="section-title">WE TESTED FOR YOU</h2>
+<section class="container-fluid px-4 py-2">
+  <div class="row">
+    <div class="col">
+      <h2 class="section-title">WE TESTED FOR YOU</h2>
+    </div>
   </div>
-  <div class="row dark-section py-5">
-    <div class="col-lg-1 d-flex flex-column justify-content-center">
+  <div class="row dark-section rounded-corners">
+    <div class="col-auto py-4 d-flex flex-column justify-content-center">
       <div>
-        <div class="prove-it-box">
+        <div class="prove-it-box d-flex align-items-center justify-content-center">
           <p>WE PROVE IT!</p>
         </div>
       </div>
     </div>
-    <div class="col-lg-3">
+    <div class="col-lg-3 py-4">
       <img class="w-100" src="assets/images/couple-bg.png" alt="">
       <div class="row">
         <div class="col-auto">
@@ -175,20 +197,20 @@
         </div>
         <div class="col"></div>
         <div class="col-auto">
-          <div class="bottom-arrow"></div>
+          <div class="top-arrow"></div>
         </div>
       </div>
-      <div class="killed-text py-3">
-        <p class="text-center">
+      <div class="killed-text py-3 d-flex justify-content-center">
+        <p>
           <span class="she-got">SHE GOT</span><br>
           <span class="killed">KILLED!</span>
         </p>
       </div>
     </div>
-    <div class="col-lg-5">
+    <div class="col-lg-5 py-4">
       <img class="w-100" src="assets/images/collage-image.png" alt="">
     </div>
-    <div class="col-lg-3 d-flex flex-column justify-content-center">
+    <div class="col-lg py-4 d-flex flex-column justify-content-center">
       <div>
         <h4 class="proof-title">There is proof?</h4>
         <p>
